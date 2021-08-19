@@ -1,0 +1,132 @@
+[
+    {
+        "id": "0b02103e386f9283",
+        "type": "tab",
+        "label": "Nagios Alerts",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "793025beb471ed81",
+        "type": "mqtt in",
+        "z": "0b02103e386f9283",
+        "name": "Nagios MQTT",
+        "topic": "Nagios-Alert/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "af987b9860e2776d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "1fc4aae19fcf418c"
+            ]
+        ]
+    },
+    {
+        "id": "1fc4aae19fcf418c",
+        "type": "json",
+        "z": "0b02103e386f9283",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "00dd466ed59a61c3",
+                "0e55104ff24b7ee8"
+            ]
+        ]
+    },
+    {
+        "id": "00dd466ed59a61c3",
+        "type": "api-call-service",
+        "z": "0b02103e386f9283",
+        "name": "",
+        "server": "97b8a4a2.ee21d8",
+        "version": 3,
+        "debugenabled": false,
+        "service_domain": "notify",
+        "service": "mobile_app_butchys_iphone",
+        "entityId": "",
+        "data": "{\"message\":\"I have received an alert of type {{ payload.NotificationType }} for {{ payload.Host }}'s {{ payload.Service }} with a status of {{ payload.Status }}. More Information: {{ payload.Message }}\",\"title\":\"Nagios Alert - {{payload.Host}}\"}",
+        "dataType": "json",
+        "mergecontext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 660,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d1eed0cf3ae4bd3",
+        "type": "comment",
+        "z": "0b02103e386f9283",
+        "name": "Actual Flow for Nagios Alerting",
+        "info": "",
+        "x": 310,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "0e55104ff24b7ee8",
+        "type": "debug",
+        "z": "0b02103e386f9283",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "af987b9860e2776d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.200.2",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "97b8a4a2.ee21d8",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 1,
+        "legacy": false,
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": false,
+        "cacheJson": true
+    }
+]
