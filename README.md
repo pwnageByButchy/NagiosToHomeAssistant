@@ -6,6 +6,7 @@ My reasons:
 * Well so I can automate fixes
 * All notifications for my house and my servers come through one mechanism
 * Actionable Notifications
+* Reducing Email Spam weird I know 
 * The Power God Dam You... Unlimited Pooooooower!!!!
 
 Essentially after the Nagios Machine has stuff installed it is copy configurations... with some Node-Red goodness for a basic notification.
