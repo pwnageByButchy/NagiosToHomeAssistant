@@ -1,8 +1,16 @@
 # NagiosToHomeAssistant
-Copy of configuration and Instructions to get Nagios notifications into Home Assistant... with some Node-Red goodness as well
+So why do this after all Nagios sends notifications?
+
+My reasons:
+* Well so I can automate fixes
+* All notifications for my house and my servers come through one mechanism
+* Actionable Notifications
+* The Power God Dam You... Unlimited Pooooooower!!!!
+
+Essentially after the Nagios Machine has stuff installed it is copy configurations... with some Node-Red goodness for a basic notification.
 
 Needed Items:
-* Working Home Assistant Instance with MQTT Broker installed and Node-Red
+* Working Home Assistant Instance with MQTT Broker and Node-Red installed
 * Working Nagios Instance 
 
 ## Setup Nagios for MQTT ##
