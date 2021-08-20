@@ -5,7 +5,7 @@ Needed Items:
 * Working Home Assistant Instance with MQTT Broker installed and Node-Red
 * Working Nagios Instance 
 
-### Setup Nagios for MQTT ###
+## Setup Nagios for MQTT ##
 
 #### Install Stuff ####
 ``` sudo apt update && sudo apt install mosquitto mosquitto-clients ```
@@ -25,3 +25,7 @@ Restart nagios
 #### Test The Configuration ####
 
 Go into the Nagios UI and send "custom notification" for both a Host and Service (Hint in the MQTT Broker Configuration in Home Assistant setup a listener for "Nagios-Alert/#" and you should see the MQTT published messages and Topic
+
+## Do Node-Red ##
+
+In Node-Red import the flow from /Node-Red/NagiosAlertsFlow.json change the notification to your chosen notification mechanism bear in mind this will affect the "Data" element.
