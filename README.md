@@ -17,6 +17,7 @@ Needed Items:
 #### Configure Stuff ####
 
 edit the /etc/nagios4/resources.cfg file and add the Items mentioned in file Nagios/resources.cfg
+
 edit the /etc/nagios4/objects/commands.cfg file and add the Items mentioned in file Nagios/commands.cfg
 
 Restart nagios
