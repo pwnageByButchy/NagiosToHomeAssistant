@@ -21,12 +21,12 @@ Needed Items:
 * Restart nagios
 
 #### Test The Configuration ####
-* In Home Assistant for to Integrations and the MQTT Broker Configuration, setup a listener for the topic "Nagios-Alert/#" (note /# are important) and you should see the MQTT published messages and Topic when they are sent
-* Go into the Nagios UI and send "custom notification" for both a Host and Service
+* In Home Assistant go to the Integrations and the MQTT Broker Configuration, setup a listener for the topic "Nagios-Alert/#" (note /# are important) and you should see the MQTT published messages and Topic when they are sent
+* Go into the Nagios UI and send "custom notification" for both a Host and a Service
 
 ## Do Node-Red ##
 
-In Node-Red import the flow from /Node-Red/NagiosAlertsFlow.json change the notification to your chosen notification mechanism bear in mind this will affect the "Data" element. In the example Flow I have my iOS device
+* In Node-Red import the flow from /Node-Red/NagiosAlertsFlow.json change the notification to your chosen notification mechanism bear in mind this will affect the "Data" element. In the example Flow I have my iOS device
 
 ## Where to Now ##
 I plan to work on some automations that can then call scripts in Home Assistant to hopefully fix or investigate, minor issues with the Host or Service reporting the problem. 
