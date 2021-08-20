@@ -9,7 +9,7 @@ My reasons:
 * Reducing Email Spam weird I know 
 * The Power God Dam You... Unlimited Pooooooower!!!!
 
-Essentially after the Nagios Machine has stuff installed it is copy configurations... with some Node-Red goodness for a basic notification.
+Essentially after the Nagios Machine has stuff installed, it is simply copy configurations... then with some Node-Red goodness for a basic notification, you're done!
 
 Needed Items:
 * Working Home Assistant Instance with MQTT Broker and Node-Red installed
