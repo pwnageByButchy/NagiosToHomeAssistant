@@ -2,6 +2,7 @@
 So why do this after all Nagios sends notifications?
 
 My reasons:
+* Nagios already monitors all my shit... computers, interwebs, servers, services and security cameras
 * Well so I can automate fixes
 * All notifications for my house and my servers come through one mechanism
 * Actionable Notifications
