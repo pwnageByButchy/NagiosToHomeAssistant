@@ -26,4 +26,4 @@ Needed Items:
 
 ## Do Node-Red ##
 
-In Node-Red import the flow from /Node-Red/NagiosAlertsFlow.json change the notification to your chosen notification mechanism bear in mind this will affect the "Data" element.
+In Node-Red import the flow from /Node-Red/NagiosAlertsFlow.json change the notification to your chosen notification mechanism bear in mind this will affect the "Data" element. In the example Flow I have my iOS device
