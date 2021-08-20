@@ -16,15 +16,13 @@ Needed Items:
 
 #### Configure Stuff ####
 
-edit the /etc/nagios4/resources.cfg file and add the Items mentioned in file Nagios/resources.cfg
-
-edit the /etc/nagios4/objects/commands.cfg file and add the Items mentioned in file Nagios/commands.cfg
-
-Restart nagios
+* edit the /etc/nagios4/resources.cfg file and add the Items mentioned in file Nagios/resources.cfg
+* edit the /etc/nagios4/objects/commands.cfg file and add the Items mentioned in file Nagios/commands.cfg
+* Restart nagios
 
 #### Test The Configuration ####
-
-Go into the Nagios UI and send "custom notification" for both a Host and Service (Hint in the MQTT Broker Configuration in Home Assistant setup a listener for "Nagios-Alert/#" and you should see the MQTT published messages and Topic
+* In Home Assistant for to Integrations and the MQTT Broker Configuration, setup a listener for "Nagios-Alert/#" and you should see the MQTT published messages and Topic
+* Go into the Nagios UI and send "custom notification" for both a Host and Service
 
 ## Do Node-Red ##
 
