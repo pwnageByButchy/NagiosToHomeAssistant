@@ -18,7 +18,7 @@ Needed Items:
 ## Setup Nagios for MQTT ##
 
 #### Install Stuff ####
-``` sudo apt update && sudo apt install mosquitto mosquitto-clients ```
+``` sudo apt update && sudo apt install mosquitto mosquitto-clients -y ```
 
 #### Check Installation and connection to MQTT Broker ####
 
